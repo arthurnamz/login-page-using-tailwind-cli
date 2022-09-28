@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./src/css/main.css">
+    <title>E-Recruitment</title>
+</head>
+<body class="bg-gstlColor text-gstlColorText ">
+
+        <!-- Navbar -->
+        <nav class="relative  container mx-auto  items-center  p-6 md:mx-auto ">
+            <!-- flex container -->
+            <div class="flex items-center justify-between md:mx-auto md:justify-between">
+                <!-- start Logo tab -->
+                <div class="md:flex">
+                    <a href="#" class="text-2xl">E-Recruitment</a>
+                </div>
+               <!-- start tabs -->
+               <div>
+                <div class="top-1 hidden space-x-6 md:flex ">
+                    <a href="#" class="text-2xl" >Home</a>
+                    <a href="#" class="text-2xl" >SignIn</a>
+                </div>
+                <!-- humburger Icon -->
+                
+                    <button class=" top-1  block hamburger items-center  md:hidden focus:outline-none" id="menu-btn">
+                        <span class="hamburger-top"></span>
+                        <span class="hamburger-middle"></span>
+                        <span class="hamburger-bottom"></span>
+                    </button>
+                    
+                <!-- end humburger Icon -->
+                <!-- mobile menu -->
+                    <div class="md:hidden" >
+                        <div id="menu" class="rounded-md absolute flex-col items-center sel-end hidden text-gstlColorDark py-8 mt-10 space-y-6 font-bold bg-gstlColorText sm:w-auto sm:self-center left-6 right-6 drop-shadow-md">
+                            <a href="#" class="text-2xl">Home</a>
+                            <a href="#" class="text-2xl">SignIn</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- end mobile menu -->
+            </div>
+        </nav>  
+        <!-- end Navbar -->
+        <!-- start main content -->
+        <section id="mainContent">
+            <!-- Flex Container -->
+            <div class="container  flex flex-col items-center px-6 mx-auto mt-10 space-y-0 md:space-y-0 md:flex-row ">
+                
+                <div class="flex flex-col mb-2 space-y-4 md:w-1/2">
+                    <div class="max-w-md text-4xl font-bold text-center md:text-5xl md:items-right">
+                        We are here for <span class="text-gstlColorLight">you</span>
+                    </div>
+                </div>
+
+                <div class="flex flex-col    md:w-1/2">
+                    <div class="mx-auto text-2xl font-bold text-left  bg-gstlColorDark m-10 md:m-6 p-6 md:p-6 rounded-md md:max-w-full md:max-h-full md:text-3xl md:text-left">
+                       <!-- Login form -->
+                          <form action="" method="post">
+                            <div class="flex flex-col space-y-4 ">
+                                <div class="flex flex-col space-y-6 md:py-4">
+                                    <h1 class="text-center">Sign In</h1>
+                               </div>
+                                 <div class="flex flex-col space-y-2 text-center md:text-left">
+                                      <label for="email">Email:</label>
+                                      <input type="email" name="email" id="email"  class="border-2 bg-gstlColorDark border-gstlColor  rounded-md p-2">
+                                 </div>
+                                 <div class="flex flex-col space-y-2 text-center md:text-left">
+                                      <label for="password">Password:</label>
+                                      <input type="password" name="password" id="password"  class="border-2 bg-gstlColorDark border-gstlColor rounded-md p-2">
+                                 </div>
+                                 <div class="flex flex-col space-y-2 md:py-6 ">
+                                      <button type="submit" class="bg-gstlColor text-gstlColorText rounded-md p-2 items-center">Login</button>
+                                 </div>
+                            </div>
+                            </form>
+                    </div>
+                </div>
+                
+            </div>
+        </section>  
+
+        <!-- end main content -->
+        <!-- footer -->
+        <footer class="bg-gstlColorDark text-gstlColorText p-6 relative  ">
+            <div class="container mt-auto mx-auto  ">
+                <div class="flex flex-col text-center md:flex-row md:flex items-center justify-between">
+                    <div class="flex flex-col md:space-x-6 md:flex-row ">
+                        <a class="text-xl font-bold">AboutUs</a>
+                        <a class="text-xl font-bold">Contact</a>
+                    </div>
+                    <div class="flex flex-col md:space-x-6 md:flex-row">
+                        <a class="text-xl font-bold">Twitter</a>
+                        <a class="text-xl font-bold">Facebook</a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+   
+    <script src="./src/js/scripts.js"></script>
+</body>
+</html>
